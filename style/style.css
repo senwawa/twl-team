@@ -162,8 +162,9 @@ body {
 
 .grid-container {
     display: grid;
+    width: 100%;
     margin-top: 100px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
 }
 
@@ -171,6 +172,7 @@ body {
 .grid-item {
     position: relative;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 /* Style for the image within each grid item */
@@ -182,6 +184,7 @@ body {
 
 /* Style for the text overlay on hover */
 .text-overlay {
+    font-family: "PN-Regular";
     position: absolute;
     top: 0;
     left: 0;
