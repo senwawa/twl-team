@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'PNC-ExtraBold';
+    src: url('../32576184-b793-4c14-873b-f99f0786a70d/eedc2867-4687-4300-9144-c68b7b9bb103.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PN-Regular';
+    src: url('../32576184-b793-4c14-873b-f99f0786a70d/5f5103cc-0304-40df-80ea-db905efc3abe.otf') format('truetype');
+}
+
+@media only screen and (max-width: 600px) {
+    /* Styles for screens with a maximum width of 600px (mobile) */
+    body {
+        background-color: #f2f2f2;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
+
+/* Desktop-specific styles using a media query */
+@media only screen and (min-width: 721px) {
+    /* Styles for screens with a minimum width of 601px (desktop) */
+    body {
+        background-color: #ffffff;
+    }
+
+    .github {
+        font-family: "PN-Regular";
+        position: fixed;
+        top: 400px;
+        right: 250px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        background-color: #414141;
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(to right, #616161, #868686);
+    font-family: 'Arial', sans-serif, 'PNC-ExtraBold', 'PN-Regular';
+    color: white;
+    overflow: hidden;
+}
+
+.fade-in-container {
+    text-align: center;
+}
+
+.fade-in-text {
+    font-size: 1.2em;
+    opacity: 0;
+    animation: fadeInText 2s forwards;
+}
+
+.plc1 {
+    font-family: "PN-Regular";
+    position: fixed;
+    top: 400px;
+    right: 370px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #414141;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.team-mem {
+    font-family: "PN-Regular";
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #414141;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.team-appl {
+    font-family: "PN-Regular";
+    position: fixed;
+    top: 10px;
+    right: 190px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #414141;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.logo-container {
+    margin-right: 1300px;
+    margin-top: 300px;
+    animation: fadeInFromBottom 2s forwards;
+}
+
+.logo-container img {
+    width: 500px; 
+}
+
+.logo-container-mem {
+    margin-right: 1650px;
+    margin-top: 0px;
+    animation: fadeInFromBottom 2s forwards;
+}
+
+.logo-container-mem img {
+    width: 150px; 
+}
+
+.goBack {
+    font-family: "PN-Regular";
+    position: fixed;
+    top: 20px;
+    right: 1740px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #414141;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.round-button:hover {
+    background-color: #4c045c; /* Darker purple color on hover */
+}
+
+.fade-in-button {
+    animation: fadeInButton 2s forwards;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    margin-top: 100px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+/* Style for each grid item */
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* Style for the image within each grid item */
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style for the text overlay on hover */
+.text-overlay {
+    font-family: "PN-Regular";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show text overlay on hover */
+.grid-item:hover .text-overlay {
+    opacity: 1;
+}
+
+@keyframes fadeInTitle {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
