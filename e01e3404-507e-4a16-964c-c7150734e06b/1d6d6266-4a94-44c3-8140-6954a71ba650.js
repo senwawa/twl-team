@@ -17,7 +17,7 @@ const imageDictionary = {
         "text": "MiyuChan"
     },
     "square": {
-        "image": "../157d0249-8f57-45d5-bfb2-5d158f579912/a0addb7a-f950-43d9-8db6-6e9e00637400/square.png", 
+        "image": "../157d0249-8f57-45d5-bfb2-5d158f579912/a0addb7a-f950-43d9-8db6-6e9e00637400/d69fff43-772e-40b8-90fd-bd91f520bbb2.png", 
         "text": "SquareJDBR"
     },
 };
